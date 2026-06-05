@@ -1,0 +1,81 @@
+/* ============================================================
+   POSTO BOM — Tipografia
+   ============================================================ */
+
+.pb-display {
+  font-family: var(--pb-font-display);
+  font-weight: var(--pb-weight-black);
+  font-style: italic;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.pb-heading-1 {
+  font-family: var(--pb-font-display);
+  font-size: clamp(var(--pb-text-3xl), 5vw, var(--pb-text-6xl));
+  font-weight: var(--pb-weight-extrabold);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.pb-heading-2 {
+  font-family: var(--pb-font-display);
+  font-size: clamp(var(--pb-text-2xl), 3.5vw, var(--pb-text-4xl));
+  font-weight: var(--pb-weight-bold);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.pb-heading-3 {
+  font-family: var(--pb-font-display);
+  font-size: var(--pb-text-xl);
+  font-weight: var(--pb-weight-semibold);
+  line-height: 1.3;
+}
+
+.pb-body {
+  font-family: var(--pb-font-body);
+  font-size: var(--pb-text-base);
+  font-weight: var(--pb-weight-regular);
+  line-height: 1.6;
+}
+
+.pb-body-lg {
+  font-family: var(--pb-font-body);
+  font-size: var(--pb-text-lg);
+  font-weight: var(--pb-weight-regular);
+  line-height: 1.7;
+}
+
+.pb-label {
+  font-family: var(--pb-font-body);
+  font-size: var(--pb-text-sm);
+  font-weight: var(--pb-weight-semibold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.pb-slogan {
+  font-family: var(--pb-font-body);
+  font-size: clamp(var(--pb-text-lg), 2.5vw, var(--pb-text-2xl));
+  font-weight: var(--pb-weight-medium);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+/* Texto com gradiente (degradê) */
+.pb-text-gradient-warm {
+  background: var(--pb-gradient-warm);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.pb-text-gradient-fresh {
+  background: var(--pb-gradient-fresh);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}

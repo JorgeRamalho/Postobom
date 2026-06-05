@@ -1,0 +1,107 @@
+.palette {
+  padding: var(--pb-space-4xl) var(--pb-space-xl);
+  background: var(--pb-gray-100);
+}
+
+.palette__inner {
+  max-width: var(--pb-max-width);
+  margin: 0 auto;
+}
+
+.palette__header {
+  text-align: center;
+  margin-bottom: var(--pb-space-3xl);
+}
+
+.palette__label {
+  display: inline-block;
+  color: var(--pb-blue-trust);
+  margin-bottom: var(--pb-space-sm);
+}
+
+.palette__title {
+  color: var(--pb-blue-trust);
+  margin-bottom: var(--pb-space-sm);
+}
+
+.palette__subtitle {
+  color: var(--pb-gray-600);
+}
+
+.palette__group {
+  margin-bottom: var(--pb-space-2xl);
+}
+
+.palette__group-title {
+  color: var(--pb-gray-800);
+  margin-bottom: var(--pb-space-lg);
+}
+
+.palette__swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--pb-space-md);
+}
+
+.palette__swatch {
+  display: flex;
+  align-items: center;
+  gap: var(--pb-space-md);
+  padding: var(--pb-space-md);
+  background: var(--pb-white);
+  border-radius: var(--pb-radius-md);
+  box-shadow: var(--pb-shadow-sm);
+}
+
+.palette__swatch-color {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--pb-radius-sm);
+  flex-shrink: 0;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.palette__swatch-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.palette__swatch-name {
+  font-size: var(--pb-text-sm);
+  font-weight: var(--pb-weight-semibold);
+  color: var(--pb-gray-800);
+}
+
+.palette__swatch-hex,
+.palette__swatch-var {
+  font-size: var(--pb-text-xs);
+  color: var(--pb-gray-600);
+  font-family: 'Consolas', 'Courier New', monospace;
+}
+
+.palette__gradients {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--pb-space-md);
+}
+
+.palette__gradient {
+  background: var(--pb-white);
+  border-radius: var(--pb-radius-md);
+  overflow: hidden;
+  box-shadow: var(--pb-shadow-sm);
+}
+
+.palette__gradient-preview {
+  height: 80px;
+}
+
+.palette__gradient-name {
+  display: block;
+  padding: var(--pb-space-sm) var(--pb-space-md);
+  font-size: var(--pb-text-sm);
+  font-weight: var(--pb-weight-medium);
+  color: var(--pb-gray-800);
+}

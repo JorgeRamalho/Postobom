@@ -1,0 +1,103 @@
+.promotions {
+  padding: var(--pb-space-4xl) var(--pb-space-xl);
+  background: var(--pb-white);
+}
+
+.promotions__inner {
+  max-width: var(--pb-max-width);
+  margin: 0 auto;
+}
+
+.promotions__header {
+  text-align: center;
+  margin-bottom: var(--pb-space-3xl);
+}
+
+.promotions__brand-logo {
+  margin: 0 auto var(--pb-space-lg);
+}
+
+.promotions__label {
+  display: inline-block;
+  color: var(--pb-red-energy);
+  margin-bottom: var(--pb-space-sm);
+}
+
+.promotions__title {
+  color: var(--pb-blue-trust);
+}
+
+.promotions__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--pb-space-xl);
+  margin-bottom: var(--pb-space-2xl);
+}
+
+.promotions__card {
+  padding: var(--pb-space-2xl);
+  border-radius: var(--pb-radius-xl);
+  color: var(--pb-white);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--pb-transition-base);
+}
+
+.promotions__card:hover {
+  transform: scale(1.02);
+}
+
+.promotions__card--warm {
+  background: var(--pb-gradient-warm);
+  box-shadow: var(--pb-shadow-glow-orange);
+}
+
+.promotions__card--fresh {
+  background: var(--pb-gradient-fresh);
+  box-shadow: var(--pb-shadow-glow-green);
+}
+
+.promotions__card--offer {
+  background: var(--pb-gradient-offer);
+  color: var(--pb-gray-800);
+  box-shadow: var(--pb-shadow-sm);
+}
+
+.promotions__badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--pb-radius-full);
+  margin-bottom: var(--pb-space-md);
+  font-size: 0.65rem;
+}
+
+.promotions__card--offer .promotions__badge {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.promotions__card-title {
+  font-family: var(--pb-font-display);
+  font-size: var(--pb-text-xl);
+  font-weight: var(--pb-weight-bold);
+  margin-bottom: var(--pb-space-sm);
+}
+
+.promotions__highlight {
+  font-family: var(--pb-font-display);
+  font-size: var(--pb-text-4xl);
+  font-weight: var(--pb-weight-black);
+  font-style: italic;
+  margin-bottom: var(--pb-space-md);
+  line-height: 1;
+}
+
+.promotions__desc {
+  font-size: var(--pb-text-sm);
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.promotions__cta {
+  text-align: center;
+}

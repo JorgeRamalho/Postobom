@@ -1,0 +1,30 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.logo__image {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  user-select: none;
+}
+
+.logo--sm { height: 36px; }
+.logo--md { height: 52px; }
+.logo--lg { height: 80px; }
+.logo--xl { height: 120px; }
+.logo--hero { height: 160px; }
+
+@media (max-width: 768px) {
+  .logo--hero { height: 120px; }
+  .logo--xl { height: 90px; }
+}
+
+@media (max-width: 480px) {
+  .logo--hero { height: 100px; }
+  .logo--md { height: 44px; }
+}

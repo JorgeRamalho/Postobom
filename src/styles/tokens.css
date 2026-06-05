@@ -1,0 +1,151 @@
+/* ============================================================
+   POSTO BOM — Design Tokens
+   Paleta, tipografia, gradientes e sensibilidade de cores
+   ============================================================ */
+
+:root {
+  /* --- Cores primárias (marca) --- */
+  --pb-orange-vibrant: #ff5722;
+  --pb-orange-light: #ff7a3d;
+  --pb-red-energy: #e63900;
+  --pb-red-deep: #c62828;
+
+  /* --- Cores secundárias --- */
+  --pb-blue-trust: #1a237e;
+  --pb-blue-dark: #0d1547;
+  --pb-blue-light: #3949ab;
+
+  /* --- Roxo (background degradê — am/pm) --- */
+  --pb-purple-deep: #4a148c;
+  --pb-purple-vibrant: #7c3aed;
+  --pb-purple-mid: #6d28d9;
+  --pb-purple-dark: #1a0a2e;
+  --pb-purple-dawn: #3d2a6e;
+  --pb-purple-dusk: #2d1b4e;
+  --pb-purple-velvet: #1e1035;
+  --pb-purple-night: #12081f;
+
+  /* --- Cores de apoio --- */
+  --pb-green-fresh: #4caf50;
+  --pb-green-lime: #7cb518;
+  --pb-green-dark: #2e7d32;
+  --pb-yellow-offer: #ffc107;
+  --pb-yellow-warm: #ffb300;
+
+  /* --- Neutros --- */
+  --pb-white: #ffffff;
+  --pb-gray-50: #fafafa;
+  --pb-gray-100: #f5f5f5;
+  --pb-gray-200: #eeeeee;
+  --pb-gray-400: #bdbdbd;
+  --pb-gray-600: #757575;
+  --pb-gray-800: #424242;
+  --pb-black: #1a1a1a;
+  --pb-dark-black: #0a0a0a;
+  --pb-black-deep: #000000;
+
+  /* --- Gradientes (degradê) --- */
+  --pb-gradient-primary: linear-gradient(
+    135deg,
+    var(--pb-orange-vibrant) 0%,
+    var(--pb-red-energy) 50%,
+    var(--pb-red-deep) 100%
+  );
+
+  --pb-gradient-hero: linear-gradient(
+    165deg,
+    var(--pb-purple-dawn) 0%,
+    var(--pb-purple-dusk) 28%,
+    var(--pb-purple-deep) 52%,
+    var(--pb-purple-velvet) 75%,
+    var(--pb-purple-night) 100%
+  );
+
+  --pb-gradient-background: linear-gradient(
+    180deg,
+    var(--pb-purple-dawn) 0%,
+    var(--pb-purple-dusk) 25%,
+    var(--pb-purple-deep) 50%,
+    var(--pb-purple-dark) 72%,
+    var(--pb-purple-night) 100%
+  );
+
+  --pb-gradient-warm: linear-gradient(
+    90deg,
+    var(--pb-orange-light) 0%,
+    var(--pb-orange-vibrant) 35%,
+    var(--pb-red-energy) 100%
+  );
+
+  --pb-gradient-fresh: linear-gradient(
+    135deg,
+    var(--pb-green-lime) 0%,
+    var(--pb-green-fresh) 100%
+  );
+
+  --pb-gradient-offer: linear-gradient(
+    90deg,
+    var(--pb-yellow-warm) 0%,
+    var(--pb-yellow-offer) 100%
+  );
+
+  --pb-gradient-card: linear-gradient(
+    145deg,
+    rgba(61, 42, 110, 0.14) 0%,
+    rgba(30, 16, 53, 0.18) 100%
+  );
+
+  /* --- Tipografia --- */
+  --pb-font-display: 'Montserrat', system-ui, sans-serif;
+  --pb-font-body: 'Poppins', system-ui, sans-serif;
+
+  --pb-text-xs: 0.75rem;
+  --pb-text-sm: 0.875rem;
+  --pb-text-base: 1rem;
+  --pb-text-lg: 1.125rem;
+  --pb-text-xl: 1.25rem;
+  --pb-text-2xl: 1.5rem;
+  --pb-text-3xl: 1.875rem;
+  --pb-text-4xl: 2.25rem;
+  --pb-text-5xl: 3rem;
+  --pb-text-6xl: 3.75rem;
+
+  --pb-weight-regular: 400;
+  --pb-weight-medium: 500;
+  --pb-weight-semibold: 600;
+  --pb-weight-bold: 700;
+  --pb-weight-extrabold: 800;
+  --pb-weight-black: 900;
+
+  /* --- Espaçamento --- */
+  --pb-space-xs: 0.25rem;
+  --pb-space-sm: 0.5rem;
+  --pb-space-md: 1rem;
+  --pb-space-lg: 1.5rem;
+  --pb-space-xl: 2rem;
+  --pb-space-2xl: 3rem;
+  --pb-space-3xl: 4rem;
+  --pb-space-4xl: 6rem;
+
+  /* --- Bordas e sombras --- */
+  --pb-radius-sm: 0.375rem;
+  --pb-radius-md: 0.75rem;
+  --pb-radius-lg: 1rem;
+  --pb-radius-xl: 1.5rem;
+  --pb-radius-full: 9999px;
+
+  --pb-shadow-sm: 0 2px 8px rgba(26, 35, 126, 0.08);
+  --pb-shadow-md: 0 4px 20px rgba(26, 35, 126, 0.12);
+  --pb-shadow-lg: 0 8px 40px rgba(26, 35, 126, 0.18);
+  --pb-shadow-glow-orange: 0 4px 24px rgba(255, 87, 34, 0.35);
+  --pb-shadow-glow-green: 0 4px 24px rgba(76, 175, 80, 0.3);
+
+  /* --- Transições --- */
+  --pb-transition-fast: 150ms ease;
+  --pb-transition-base: 250ms ease;
+  --pb-transition-slow: 400ms ease;
+
+  /* --- Layout --- */
+  --pb-max-width: 1200px;
+  --pb-header-height: 72px;
+}

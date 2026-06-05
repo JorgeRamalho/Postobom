@@ -1,0 +1,65 @@
+/* ============================================================
+   POSTO BOM — Utilitários de Gradiente (Degradê)
+   ============================================================ */
+
+.pb-bg-gradient-primary {
+  background: var(--pb-gradient-primary);
+}
+
+.pb-bg-gradient-hero {
+  background: var(--pb-gradient-hero);
+}
+
+.pb-bg-gradient-background {
+  background: var(--pb-gradient-background);
+}
+
+.pb-bg-gradient-warm {
+  background: var(--pb-gradient-warm);
+}
+
+.pb-bg-gradient-fresh {
+  background: var(--pb-gradient-fresh);
+}
+
+.pb-bg-gradient-offer {
+  background: var(--pb-gradient-offer);
+}
+
+.pb-bg-gradient-card {
+  background: var(--pb-gradient-card);
+}
+
+/* Overlay com degradê para seções */
+.pb-overlay-gradient {
+  position: relative;
+}
+
+.pb-overlay-gradient::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(61, 42, 110, 0.2) 0%,
+    rgba(45, 27, 78, 0.45) 40%,
+    rgba(18, 8, 31, 0.75) 100%
+  );
+  pointer-events: none;
+}
+
+/* Borda com gradiente */
+.pb-border-gradient {
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+}
+
+.pb-border-gradient::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: var(--pb-gradient-warm);
+  z-index: -1;
+}
