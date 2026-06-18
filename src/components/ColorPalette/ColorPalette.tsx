@@ -1,16 +1,28 @@
 import { colors, gradients } from '../../theme/colors'
 import './ColorPalette.css'
 
-const paletteGroups = [
+const photoBlocks = [
   {
-    title: 'Primárias — Energia',
-    items: [
-      { name: 'Laranja Vibrante', hex: colors.orange.vibrant, var: '--pb-orange-vibrant' },
-      { name: 'Laranja Claro', hex: colors.orange.light, var: '--pb-orange-light' },
-      { name: 'Vermelho Energia', hex: colors.red.energy, var: '--pb-red-energy' },
-      { name: 'Vermelho Profundo', hex: colors.red.deep, var: '--pb-red-deep' },
-    ],
+    title: 'Combustível',
+    caption: 'Abastecimento com qualidade e preço justo, todos os dias.',
+    src: 'https://images.unsplash.com/photo-1548267309-6b4b9c496175?w=800&q=80',
+    alt: 'Bomba de combustível em posto de gasolina',
   },
+  {
+    title: 'Conveniência',
+    caption: 'Mini mercado completo, farmácia e tudo que você precisa na viagem.',
+    src: 'https://images.unsplash.com/photo-1604719312566-8912ecd117b4?w=800&q=80',
+    alt: 'Prateleiras de mini mercado em loja de conveniência',
+  },
+  {
+    title: 'Serviços',
+    caption: 'Troca de óleo, lavagem e cuidado completo para o seu veículo.',
+    src: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80',
+    alt: 'Mecânico realizando manutenção automotiva',
+  },
+]
+
+const paletteGroups = [
   {
     title: 'Background — A.M. / P.M.',
     items: [
@@ -60,6 +72,27 @@ export function ColorPalette() {
             Tokens de cor e gradientes usados em todo o projeto Posto Bom.
           </p>
         </header>
+
+        <div className="palette__group">
+          <div className="palette__photos">
+            {photoBlocks.map((photo) => (
+              <article key={photo.title} className="palette__photo">
+                <div className="palette__photo-image-wrap">
+                  <img
+                    className="palette__photo-image"
+                    src={photo.src}
+                    alt={photo.alt}
+                    loading="lazy"
+                  />
+                </div>
+                <div className="palette__photo-body">
+                  <h3 className="palette__photo-title pb-heading-3">{photo.title}</h3>
+                  <p className="palette__photo-caption pb-body">{photo.caption}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
 
         {paletteGroups.map((group) => (
           <div key={group.title} className="palette__group">
